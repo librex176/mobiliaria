@@ -1,0 +1,18 @@
+/* App.css */
+
+.enlace {
+    font-size: 20px; /* Tamaño de fuente para los enlaces de navegación */
+  }
+  
+  .barra {
+    background-color: #475e88;
+  }
+  
+  .imagen {
+    max-width: 100px; 
+  }
+  
+  .ml-5 {
+    margin-left: 3rem !important; /* Margen izquierdo de 3rem para la imagen del logo */
+  }
+  
