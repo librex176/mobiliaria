@@ -1,7 +1,6 @@
-/* App.css */
 
 .enlace {
-    font-size: 20px; /* Tamaño de fuente para los enlaces de navegación */
+    font-size: 1.5em; 
   }
   
   .barra {
@@ -13,6 +12,6 @@
   }
   
   .ml-5 {
-    margin-left: 3rem !important; /* Margen izquierdo de 3rem para la imagen del logo */
+    margin-left: 3rem !important; 
   }
   
