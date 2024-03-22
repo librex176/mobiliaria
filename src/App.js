@@ -5,37 +5,34 @@ import './estilos/navbar.css';
 
 function App() {
   return (
-    <div className="App container-fluid">
-      <div className='row'>
-        <nav className="navbar navbar-expand-lg navbar-dark barra">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col">
-                <img src={logo} alt="Imagen de prueba" className="imagen mx-auto d-block" />
-              </div>
-              <div className="col-auto">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-              </div>
-            </div>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item enlace">
-                  <a className="nav-link" href="/contacto">Contacto</a>
-                </li>
-                <li className="nav-item enlace">
-                  <a className="nav-link" href="/telefono">Telefono</a>
-                </li>
-                <li className="nav-item enlace">
-                  <a className="nav-link" href="/contactanos">Contactanos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <nav className="navbar navbar-expand-sm navbar-light barra">
+      <div className="container-fluid">
+        <div className="d-flex align-items-center"> 
+        
+         <img src={logo} className='imagen' /> 
+         <h1 className='texto'>Gestoria & Inmobiliaria</h1>
+          
+        </div>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse justify-content-end m-2" id="navbarSupportedContent">
+          <ul className="navbar-nav">
+            <li className="nav-item enlace m-2">
+              <a className="nav-link active texto " aria-current="page" href="/#">3332012503</a>
+            </li>
+            <li className="nav-item enlace m-2">
+              <a className="nav-link active texto" aria-current="page" href="/#">Contactanos</a>
+            </li>
+            <li className="nav-item enlace m-2">
+              <a className="nav-link active texto" aria-current="page" href="/#">Nuestros servicios</a>
+            </li>
+            
+            
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
