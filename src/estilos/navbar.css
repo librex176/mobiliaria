@@ -1,17 +1,24 @@
 
 .enlace {
     font-size: 1.5em; 
+    color: aliceblue !important;
+    
   }
-  
+  .texto{
+    color: aliceblue !important;
+  }
   .barra {
     background-color: #475e88;
   }
   
   .imagen {
-    max-width: 100px; 
+    width: 8em;
+    height: 6em; 
   }
   
   .ml-5 {
     margin-left: 3rem !important; 
   }
   
+  
+      
