@@ -9,7 +9,7 @@ function App() {
       <div className="container-fluid">
         <div className="d-flex align-items-center"> 
         
-         <img src={logo} className='imagen' /> 
+         <img src={logo} className='imagen' alt='Logotipo' /> 
          <h1 className='texto'>Gestoria & Inmobiliaria</h1>
           
         </div>

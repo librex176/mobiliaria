@@ -18,7 +18,7 @@ function Servicios() {
 
                 <div className='col-lg-3 col-sm-6 '>
                     <div className="card carta text-center" >
-                        <img src={renta} className="card-img-top" alt="Descripción de la imagen" />
+                        <img src={renta} className="card-img-top" alt="rentas" />
                         <div className="card-body">
                             <h5 className="card-title">Administracion de rentas</h5>
                         </div>
@@ -64,7 +64,7 @@ function Servicios() {
 
                 <div className='col-lg-3 col-sm-6 '>
                     <div className="card carta text-center" >
-                        <img src={promo} className="card-img-top" alt="Descripción de la imagen" />
+                        <img src={promo} className="card-img-top" alt="promocion" />
                         <div className="card-body">
                         <h5 className="card-title">Promoción de renta</h5>
                         </div>
@@ -118,7 +118,7 @@ function Servicios() {
 
                 <div className='col-lg-3 col-sm-6 '>
                     <div className="card carta text-center" >
-                        <img src={contrato} className="card-img-top" alt="Descripción de la imagen" />
+                        <img src={contrato} className="card-img-top" alt="contratos" />
                         <div className="card-body">
                         <h5 className="card-title">Contratos</h5>
                         </div>
