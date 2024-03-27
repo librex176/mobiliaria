@@ -24,13 +24,12 @@ function App() {
             <li className="nav-item enlace m-2">
               <a className="nav-link active texto" aria-current="page" href="/#">Contactanos</a>
             </li>
-            <li className="nav-item enlace m-2">
-              <a className="nav-link active texto" aria-current="page" href="/#">Nuestros servicios</a>
-            </li>
+           
             
             
           </ul>
         </div>
+        
       </div>
     </nav>
   );

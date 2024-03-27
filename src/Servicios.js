@@ -4,93 +4,215 @@ import renta from './imagenes/rentas.jpg';
 import promo from './imagenes/promo.jpg';
 import contrato from './imagenes/contrato.jpg';
 import mantenimiento from './imagenes/mantenimiento.jpg';
-function Servicios(){
-    return(
-        <div className='container-fluid'> 
-            <div className='row m-4 justify-content-center'>
-                <div className='col-lg-3 col-sm-6'>
-                    <div className="card" >
+
+function Servicios() {
+    return (
+        <div className='container-fluid tama'>
+           <div className="row">
+            <div className="col text-center">
+                <h1>Nuestros servicios</h1>
+            </div>
+        </div>
+
+            <div className='row mt-2 '>
+
+                <div className='col-lg-3 col-sm-6 '>
+                    <div className="card carta text-center" >
                         <img src={renta} className="card-img-top" alt="Descripción de la imagen" />
                         <div className="card-body">
                             <h5 className="card-title">Administracion de rentas</h5>
-                            <ul className="card-list">
-                                <li>
-                                    <span className="bullet"></span>Administramos su inmueble para que usted no tenga nada de qué preocuparse, garantizándole su renta segura mes a mes y la protección de su patrimonio.
-                                </li>
-                                <li>
-                                    <span className="bullet"></span> Garantía en el pago puntual de sus rentas.
-                                </li>
-                                <li>
-                                    <span className="bullet"></span> Fianzas y/o pólizas de arrendamiento para inquilinos.
-                                </li>
-                                <li>
-                                    <span className="bullet"></span> Mantenimiento y reparaciones.
-                                </li>
-                                <li>
-                                    <span className="bullet"></span> Asesoría y apoyo jurídico.
-                                </li>
-                            </ul>
+                        </div>
+                        
+                        <div className="card-body">
+                        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#texto1">
+                            Ver mas
+                        </button>
+                        <div className="modal fade" id="texto1" tabIndex="-1" aria-labelledby="texto1" aria-hidden="true">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <h1 className="modal-title fs-5" id="texto1">Administracion de rentas</h1>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body text-start">
+                                <p>
+                                •Administramos su inmueble para que usted no tenga nada de qué preocuparse,
+                                garantizándole su renta segura mes a mes y la protección de su patrimonio
+                                </p>
+                                <p>
+                                •Garantía en el pago puntual de sus rentas
+                                </p>
+                                <p>
+                                •Fianzas y/o pólizas de arrendamiento para inquilinos <br/>
+                                •Mantenimiento y reparaciones<br/>
+                                •Asesoría y apoyo jurídico
+                                </p>
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            <a href="#" className="btn btn-primary">Ver más</a>
+                        
                         </div>
                     </div>
                 </div>
-                <div class="card col-lg-3 col-sm-6" >
-                    <img class="card-img-top" src={promo} alt="Descripción de la imagen" />
-                    <div class="card-body">
-                        <h5 class="card-title">Promoción de renta</h5>
-                        <p class="card-text">Protegemos tu patrimonio y a tu persona de forma segura y confidencial, investigando a los interesados desde el buró de crédito hasta posibles demandas de cualquier índole a nivel nacional, con la finalidad de darles la tranquilidad de que su inmueble está en las mejores manos y generando ingresos.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Promoción del inmueble y análisis de los solicitantes.</li>
-                        <li class="list-group-item">Confidencialidad de datos.</li>
-                        <li class="list-group-item">Representaciones en contratos.</li>
-                        <li class="list-group-item">Opiniones de valor.</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver más</a>
+                
+
+                <div className='col-lg-3 col-sm-6 '>
+                    <div className="card carta text-center" >
+                        <img src={promo} className="card-img-top" alt="Descripción de la imagen" />
+                        <div className="card-body">
+                        <h5 className="card-title">Promoción de renta</h5>
+                        </div>
+                        <div className="card-body">
+                            
+                            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#texto2">
+                            Ver mas
+                            </button>
+                        </div>
+                        
+                        
+                        
+                        <div className="modal fade" id="texto2" tabIndex="-1" aria-labelledby="texto2" aria-hidden="true">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <h1 className="modal-title fs-5" id="texto2">Administracion de rentas</h1>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body text-start">
+                                <p>
+                                • Protegemos tu patrimonio y a tu persona de forma segura y confidencial, investigando
+                                a los interesados desde el buró de crédito hasta posibles demandas de cualquier índole
+                                a nivel nacional, con la finalidad de darles la tranquilidad de que su inmueble está en las
+                                mejores manos y generando ingresos.
+                                </p>
+                                <p>
+                                • Promoción del inmueble y análisis de los solicitantes
+                                </p>
+                                <p>
+                                • Confidencialidad de datos
+                                </p>
+                                <p>
+                                • Representaciones en contratos
+                                </p>
+                                <p>
+                                • Opiniones de valor
+                                </p>
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <div className='col-lg-3 col-sm-6'>
-                    <div class="card" >
-                        <img class="card-img-top" src={contrato} alt="Descripción de la imagen" />
-                        <div class="card-body">
-                            <h5 class="card-title">Contratos</h5>
-                            
+
+
+                <div className='col-lg-3 col-sm-6 '>
+                    <div className="card carta text-center" >
+                        <img src={contrato} className="card-img-top" alt="Descripción de la imagen" />
+                        <div className="card-body">
+                        <h5 className="card-title">Contratos</h5>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Contrato de arrendamiento personalizados y detallados</li>
-                            <li class="list-group-item">Contratos notariados y de Justicia Alternativa</li>
+                        <div className="card-body">
                             
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Ver más</a>
+                            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#texto3">
+                            Ver mas
+                            </button>
                         </div>
+                        
+                        
+                        
+                        <div className="modal fade" id="texto3" tabIndex="-1" aria-labelledby="texto3" aria-hidden="true">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <h1 className="modal-title fs-5" id="texto3">Contratos</h1>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body text-start">
+                                <p>
+                                • Contrato de arrendamiento personalizados y detallados
+                                </p>
+                                <p>
+                                • Contratos notariados y de Justicia Alternativa    
+                                </p>
+                                
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <div className='col-lg-3 col-sm-6'>
-                    <div class="card" >
-                        <img class="card-img-top" src={mantenimiento} alt="Descripción de la imagen" />
-                        <div class="card-body">
-                            <h5 class="card-title">Mantenimiento</h5>
-                            
+
+                <div className='col-lg-3 col-sm-6 '>
+                    <div className="card carta text-center" >
+                        <img src={mantenimiento} className="card-img-top" alt="Mantenimiento" />
+                        <div className="card-body">
+                        <h5 className="card-title">Mantenimiento</h5>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Contamos con personal profesional y capacitado para las diferentes tareas de
-                            mantenimiento</li>
-                            <li class="list-group-item">Jardinería</li>
-                            <li class="list-group-item">Fontaneria</li>
-                            <li class="list-group-item">Albañileria</li>
-                            <li class="list-group-item">Electricidad</li>
+                        <div className="card-body">
                             
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Ver más</a>
+                            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#texto4">
+                            Ver mas
+                            </button>
                         </div>
+                        
+                        
+                        
+                        <div className="modal fade" id="texto4" tabIndex="-1" aria-labelledby="texto4" aria-hidden="true">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <h1 className="modal-title fs-5" id="texto4">Mantenimiento</h1>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body text-start">
+                                <p>
+                                • Contamos con personal profesional y capacitado para las diferentes tareas de
+                                mantenimiento
+                                </p>
+                                <p>
+                                • Jardinería  
+                                </p>
+                                <p>
+                                • Fontanería  
+                                </p>
+                                <p>
+                                • Albañilería  
+                                </p>
+                                <p>
+                                • Electricidad
+                                </p>
+                                
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
+
             </div>
         </div>
     )
 }
+
 export default Servicios;
