@@ -9,14 +9,14 @@ function Servicios() {
     return (
         <div className='container-fluid tama'>
            <div className="row">
-            <div className="col text-center">
+            <div className="col text-center mt-4">
                 <h1 className='texto textod '>Nuestros servicios</h1>
             </div>
         </div>
 
-            <div className='row mt-2 '>
+            <div className='row mt-2  '>
 
-                <div className='col-lg-3 col-sm-6 '>
+                <div className='col-lg-3 col-sm-6 mt-3 '>
                     <div className="card carta text-center" >
                         <img src={renta} className="card-img-top" alt="rentas" />
                         <div className="card-body">
@@ -62,7 +62,7 @@ function Servicios() {
                 </div>
                 
 
-                <div className='col-lg-3 col-sm-6 '>
+                <div className='col-lg-3 col-sm-6 mt-3 '>
                     <div className="card carta text-center" >
                         <img src={promo} className="card-img-top" alt="promocion" />
                         <div className="card-body">
@@ -116,7 +116,7 @@ function Servicios() {
                 </div>
 
 
-                <div className='col-lg-3 col-sm-6 '>
+                <div className='col-lg-3 col-sm-6 mt-3'>
                     <div className="card carta text-center" >
                         <img src={contrato} className="card-img-top" alt="contratos" />
                         <div className="card-body">
@@ -158,7 +158,7 @@ function Servicios() {
                     </div>
                 </div>
 
-                <div className='col-lg-3 col-sm-6 '>
+                <div className='col-lg-3 col-sm-6 mt-3 '>
                     <div className="card carta text-center" >
                         <img src={mantenimiento} className="card-img-top" alt="Mantenimiento" />
                         <div className="card-body">

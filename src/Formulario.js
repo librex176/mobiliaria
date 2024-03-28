@@ -61,7 +61,7 @@ const Formulario = () => {
               <input type="text" className="form-control" placeholder="Tu nombre" name="from_name" />
             </div>
             <div className="mb-3">
-              <input type="email" className="form-control" placeholder="Tu correo" name="correo" />
+              <input type="text" className="form-control" placeholder="Tu correo" name="correo" />
             </div>
             <div className="mb-3">
               <input type="number" className="form-control" placeholder="Tu número de contacto" name="telefono" />
