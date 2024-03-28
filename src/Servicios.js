@@ -10,7 +10,7 @@ function Servicios() {
         <div className='container-fluid tama'>
            <div className="row">
             <div className="col text-center">
-                <h1>Nuestros servicios</h1>
+                <h1 className='texto textod '>Nuestros servicios</h1>
             </div>
         </div>
 
@@ -20,7 +20,7 @@ function Servicios() {
                     <div className="card carta text-center" >
                         <img src={renta} className="card-img-top" alt="rentas" />
                         <div className="card-body">
-                            <h5 className="card-title">Administracion de rentas</h5>
+                            <h5 className="card-title">Administración de rentas</h5>
                         </div>
                         
                         <div className="card-body">
@@ -140,7 +140,7 @@ function Servicios() {
                                 </div>
                                 <div className="modal-body text-start">
                                 <p>
-                                • Contrato de arrendamiento personalizados y detallados
+                                • Contratos de arrendamiento personalizados y detallados
                                 </p>
                                 <p>
                                 • Contratos notariados y de Justicia Alternativa    

@@ -1,3 +1,11 @@
-.ci{
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tac+One&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+.ci {
     background-color: orange;
 }
+.texto{
+    font-family: "Truculenta", sans-serif;
+}
+

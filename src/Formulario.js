@@ -2,7 +2,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './estilos/Contacto.css';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import XIcon from '@mui/icons-material/X';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -10,6 +10,7 @@ import { pink } from '@mui/material/colors';
 
 const Formulario = () => {
   const form = useRef();
+  const [enviado, setEnviado] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,6 +22,10 @@ const Formulario = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          setEnviado(true);
+          setTimeout(() => {
+            setEnviado(false);
+          }, 5000); // Ocultar la alerta después de 5 segundos
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -32,7 +37,7 @@ const Formulario = () => {
     <div className='container-fluid mt-2'>
       <div className='row ci p-2'>
         <div className='col-lg-6 col-sm-12 mb-4 '>
-          <h1>Ponte en contacto</h1>
+          <h1 className='texto'>Ponte en contacto</h1>
           <div className="d-flex align-items-center mb-3">
             <FacebookIcon sx={{ fontSize: 48, marginRight: 8, color: '#3b5998' }} />
             <button className='btn  btn-lg'>Miguel Izar</button>
@@ -47,7 +52,7 @@ const Formulario = () => {
           </div>
           <div className="d-flex align-items-center">
             <WhatsAppIcon sx={{ fontSize: 48, marginRight: 8, color: '#25d366' }} />
-            <button className='btn  btn-lg'>3318925607</button>
+            <a href="https://wa.me/3318925607" className='btn btn-lg'>Escribeme</a>
           </div>
         </div>
         <div className='col-lg-6 col-sm-12 mt-4'>
@@ -64,6 +69,11 @@ const Formulario = () => {
             <div className="mb-3">
               <textarea className="form-control" placeholder="Déjanos tu pregunta/opinión" name="mensaje"></textarea>
             </div>
+            {enviado && (
+              <div className="alert alert-success" role="alert">
+                ¡Mensaje enviado!
+              </div>
+            )}
             <button type="submit" className="btn btn-primary">Enviar</button>
           </form>
         </div>

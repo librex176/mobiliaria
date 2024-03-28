@@ -22,7 +22,7 @@ function App() {
               <a className="nav-link active texto " aria-current="page" href="/#">3332012503</a>
             </li>
             <li className="nav-item enlace m-2">
-              <a className="nav-link active texto" aria-current="page" href="/#">Contactanos</a>
+              <a className="nav-link active texto" aria-current="page" href="https://wa.me/3318925607">Contactanos</a>
             </li>
            
             
