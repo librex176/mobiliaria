@@ -40,11 +40,11 @@ const Formulario = () => {
           <h1 className='texto'>Ponte en contacto</h1>
           <div className="d-flex align-items-center mb-3">
             <FacebookIcon sx={{ fontSize: 48, marginRight: 8, color: '#3b5998' }} />
-            <button className='btn  btn-lg'>Miguel Izar</button>
+            <a href="https://www.facebook.com/profile.php?id=100080434728468&mibextid=qi2Omg&rdid=E0G3rxkWLiSUAWXd" className='btn btn-lg'>Siguenos</a>
           </div>
           <div className="d-flex align-items-center mb-3">
             <InstagramIcon sx={{ fontSize: 48, marginRight: 8, color: pink[500] }} />
-            <button className='btn  btn-lg'>Miguel Izar</button>
+            <a href="https://www.instagram.com/miguelizar" className='btn btn-lg'>Siguenos</a>
           </div>
           <div className="d-flex align-items-center mb-3">
             <XIcon sx={{ fontSize: 48, marginRight: 8 }} />
